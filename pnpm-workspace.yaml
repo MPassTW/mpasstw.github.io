@@ -1,10 +1,5 @@
 packages:
   - '.'
-allowBuilds:
-  '@tailwindcss/oxide': true
-  esbuild: true
-overrides:
-  vite: 6.3.5
 supportedArchitectures:
   os:
     - linux

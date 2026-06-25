@@ -78,10 +78,10 @@ function Hero() {
       {/* Top strip */}
       <div className="border-b border-[#e8e8e8] px-6 md:px-10 py-3 flex items-center justify-between max-w-screen-xl mx-auto w-full">
         <span className="text-[11px] tracking-[0.15em] text-[#999] uppercase" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-          MemberPass · MP 2.0 · 會員認證中心
+          MemberPass · 會員認證中心
         </span>
         <span className="text-[11px] tracking-[0.1em] text-[#999] uppercase" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-          Taiwan · 2025
+          Taipei · 2026
         </span>
       </div>
 
@@ -314,7 +314,7 @@ function HowItWorks() {
   const steps = [
     { n: "01", title: "預填會員資料", body: "消費者在 MemberPass 平台一次填寫基本資訊，生成專屬識別碼與安全動態條碼。" },
     { n: "02", title: "給商家掃描", body: "結帳時出示 MemberPass 條碼，商家 POS 系統掃描並透過 OAuth 2.0 完成身份驗證。" },
-    { n: "03", title: "自動完成！", body: "系統自動累積點數並完成會員綁定。消費者可選擇是否下載商家 App，完全不強迫。" },
+    { n: "03", title: "自動完成！", body: "系統自動累積點數並完成會員綁定。結帳後商家再透過優惠推播，引導消費者決定是否下載自家 App。" },
   ];
 
   return (
@@ -423,7 +423,7 @@ function Audiences() {
                 points: [
                   "一次預填，處處通用",
                   "結帳即自動累積點數",
-                  "無需下載多個商家 App",
+                  "無需預裝，即可集點",
                   "個資由平台統一保護",
                 ],
               },
@@ -435,7 +435,7 @@ function Audiences() {
                   "LINE Pay / Google Pay 深度整合",
                   "支付即完成會員驗證",
                   "擴大支付場景覆蓋率",
-                  "降低商家系統依賴",
+                  "相容商家既有系統架構",
                 ],
               },
             ].map((g) => (
