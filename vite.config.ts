@@ -17,6 +17,12 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  base: (() => {
+    const repo = process.env.GITHUB_REPOSITORY; // "owner/repo"
+    if (!repo) return '/';
+    const name = repo.split('/')[1];
+    return name.endsWith('.github.io') ? '/' : `/${name}/`;
+  })(),
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
