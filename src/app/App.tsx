@@ -765,7 +765,7 @@ function Footer() {
           ))}
         </div>
         <p className="text-[11px] text-[#444]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-          © 2025 MemberPass
+          © 2026 MemberPass
         </p>
       </div>
     </footer>
