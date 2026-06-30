@@ -101,7 +101,7 @@ function Hero() {
           >
             零摩擦的<br />
             <span style={{ color: "#1a56db" }}>會員體驗</span><br />
-            <span style={{ WebkitTextStroke: "2px #0d1b2a", color: "transparent" }}>從這裡開始</span>
+            <span style={{ color: "#000000" }}>從這裡開始</span><br />
           </h1>
 
           {/* Bottom row */}
