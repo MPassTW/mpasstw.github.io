@@ -910,9 +910,14 @@ function ESG() {
             </div>
           </div>
 
-          {/* Four pillars */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1e2d44]">
+          {/* ESG pillars — Row 1: E S G */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e2d44] mb-px">
             {[
+              {
+                tag: "E — Environmental",
+                title: "環境永續",
+                body: "整合實體會員卡、紙本集點卡與電子發票載具，以單一數位憑證取代紙卡，降低紙張與塑膠的生產與廢棄，落實綠色消費。",
+              },
               {
                 tag: "S — Social",
                 title: "賦能中小企業",
@@ -922,16 +927,6 @@ function ESG() {
                 tag: "G — Governance",
                 title: "資安合規保護",
                 body: "OAuth 2.0 架構確保資料拋轉符合國際標準，消費者擁有明確的同意權管理。",
-              },
-              {
-                tag: "SDG 8",
-                title: "經濟成長動能",
-                body: "降低數位獲客成本，帶動線下零售與中小型餐飲業績增長，減少第一線人員勞動摩擦。",
-              },
-              {
-                tag: "SDG 9 + 10",
-                title: "基礎建設平權",
-                body: "如同 TWQR 般的會員認證基礎設施，打破大企業對私域流量資源的壟斷。",
               },
             ].map((p) => (
               <div key={p.tag} className="bg-[#0d1b2a] p-8">
@@ -956,6 +951,48 @@ function ESG() {
                   style={{
                     fontFamily: "'Noto Sans TC', sans-serif",
                   }}
+                >
+                  {p.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* ESG pillars — Row 2: SDG 8 / 9 / 10 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e2d44] mt-6">
+            {[
+              {
+                tag: "SDG 8",
+                title: "尊嚴就業與經濟成長",
+                body: "降低數位獲客成本（CAC）與提高結帳轉換率，帶動線下零售與中小型餐飲業的業績增長；同時優化結帳流程，減少第一線從業人員的勞動摩擦。",
+              },
+              {
+                tag: "SDG 9",
+                title: "產業、創新與基礎建設",
+                body: "MP 2.0 扮演如同 TWQR 的「會員認證基礎設施」，透過創新技術串接電子支付與商家自有系統，推動整體實體通路的數位升級與資訊流整合。",
+              },
+              {
+                tag: "SDG 10",
+                title: "減少不平等",
+                body: "打破只有大型資本企業才能玩轉「私域流量」的資源壁壘。透過共享的 OAuth 2.0 認證網路，讓行銷資源有限的中小企業也能以極低門檻擁有強大的會員導流能力。",
+              },
+            ].map((p) => (
+              <div key={p.tag} className="bg-[#0d1b2a] p-8">
+                <p
+                  className="text-[10px] font-bold tracking-widest text-[#2da042] mb-4"
+                  style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                >
+                  {p.tag}
+                </p>
+                <h4
+                  className="font-bold text-white mb-3"
+                  style={{ fontFamily: "'Noto Sans TC', sans-serif" }}
+                >
+                  {p.title}
+                </h4>
+                <p
+                  className="text-xs text-[#7a90a8] leading-relaxed"
+                  style={{ fontFamily: "'Noto Sans TC', sans-serif" }}
                 >
                   {p.body}
                 </p>
